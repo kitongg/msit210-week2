@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock title %}
+{% block content %}
+<h1>This is About page.</h1>
+<ul>
+    {% for feature in features %}
+        <li>{{ feature }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
